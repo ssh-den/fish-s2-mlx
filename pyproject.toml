@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fish-s2-mlx"
+version = "0.1.0"
+description = "Minimal local TTS and voice cloning UI powered by MLX Speech."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "ssh-den" }]
+dependencies = [
+  "gradio>=4.44",
+  "mlx>=0.20",
+  "mlx-speech",
+  "numpy>=1.26",
+  "soundfile>=0.12",
+]
+
+[project.scripts]
+fish-s2-mlx = "fish_s2_mlx.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,5 @@
+gradio>=4.44
+mlx>=0.20
+mlx-speech
+numpy>=1.26
+soundfile>=0.12
